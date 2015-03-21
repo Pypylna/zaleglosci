@@ -1,0 +1,9 @@
+<h2><a href="{{ serial.link }}"> {{ serial.tytul }} </a></h2>
+Gtunek: {{ serial.getSkrotGatunku(serial.gatunek) }}<br>
+Nasza ocena:
+{% for i in 1 .. serial.ocena %}
+    *
+{% endfor %}
+{% for i in (serial.ocena +1) .. 10 %}
+    o
+{% endfor %}<br>

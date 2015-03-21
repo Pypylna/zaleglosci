@@ -1,0 +1,8 @@
+acme_book_web:
+    resource: "@AcmeBookWebBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation
